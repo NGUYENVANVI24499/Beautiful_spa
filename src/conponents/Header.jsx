@@ -15,7 +15,23 @@ const mainNav = [
   {
     display: "Dịch vụ",
     path:"/Service"
-  }
+  },
+  {
+    display: "Kết quả điều trị",
+    path:"/d"
+  },
+  {
+    display: "Đào tạo spa",
+    path:"/k"
+  },
+  {
+    display: "Tip làm đẹp",
+    path:"/tip"
+  },
+  {
+    display: "Tuyển Dụng",
+    path:"/s"
+  },
  
 ]
 const Header = () => {
@@ -43,6 +59,21 @@ const Header = () => {
 
   return (
     <div className="header" ref={headerRef}>
+      <div className="header__top hide-for-mobile ">
+        <div className="contact">
+          <div className='time'>
+            08:30 - 19:30, THứ 2 - CN (kể cả ngày lễ, Tết)
+          </div>
+          <div className='phone'>
+            Hotline: 19006947
+          </div>
+        </div>
+        <div className="shopping">
+          <span>0d</span>
+          <ion-icon name="card-outline"></ion-icon>
+        </div>
+            
+          </div>
         <div className="container">
             <div className="header__logo">
                 <Link to="/">
@@ -77,14 +108,7 @@ const Header = () => {
                     <div className="header__menu__right--item">
                         <ion-icon name="search-outline"></ion-icon>
                     </div>
-                    <div className="header__menu__right--item">
-                        <Link to="/card" >
-                            <ion-icon name="bag-outline"></ion-icon>
-                        </Link>
-                    </div>
-                    <div className="header__menu__right--item">
-                        <ion-icon name="people-outline"></ion-icon>
-                    </div>
+                    
                </div>
             </div>
         </div>

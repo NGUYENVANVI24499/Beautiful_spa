@@ -49,7 +49,7 @@ a{
     }
 }
 @each $var in $numbers {
-    .grid-col-sm#{$var}{
+    .grid-col-sm-#{$var}{
        @include mobile{
         grid-template-columns: repeat($var, 1fr);
        }
@@ -59,7 +59,8 @@ a{
     width: 100%;
     max-width: 1620px;
     padding: 0 50px;
-    margin: auto;
+    margin: 0 auto;
+    
     @include tablet{
         padding : 0 20px;
     }
@@ -90,4 +91,15 @@ a{
     @include breakpoint-up(large){
         display: none !important;
     }  
+}
+
+.grid{
+    display: grid;
+}
+
+.boder{
+
+    border: 1px solid ;
+    opacity: .3;
+    
 }
