@@ -15,7 +15,7 @@ const Layout = () => {
     <BrowserRouter>
         <div>
             <Header />
-            <div className="container">
+            <div >
                 <div className="main">
                     <Routess />
                 </div>
