@@ -104,12 +104,13 @@ const Header = () => {
                   }
                </div>
                 {/* header right begin */}
-               <div className="header__menu__right">
+                <div className="header__menu__right">
                     <div className="header__menu__right--item">
                         <ion-icon name="search-outline"></ion-icon>
                     </div>
                     
                </div>
+               {/* kết thúc header right */}
             </div>
         </div>
     </div>

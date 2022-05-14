@@ -3,15 +3,15 @@ import PropTypes from 'prop-types'
 
 const CardService = props => {
   return (
-    <div className='Service__card__item'>
+    < >
       <div className="Service__card__item--image">
-        <img src={props.img} />
+        <img src={props.img} alt="Alternative text" />
       </div>
       <div className="Service__card__item--contend">
         {props.description}
       </div>
 
-    </div>
+    </>
     
   )
 }
