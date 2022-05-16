@@ -90,17 +90,17 @@ const Header = () => {
                   <ion-icon name="chevron-back-outline"></ion-icon>
                 </div>
                   {
-                      mainNav.map((item, index)=>(
-                          <div
-                               key={index} 
-                               className={`header__menu__left--item ${index === activeNav ? 'active' : ''}` }
-                               onClick = {handleMenu}
-                          >
-                              <Link to={item.path} >
-                                  <span>{item.display}</span>
-                              </Link>
-                          </div>
-                      ))
+                    mainNav.map((item, index)=>(
+                        <div
+                              key={index} 
+                              className={`header__menu__left--item ${index === activeNav ? 'active' : ''}` }
+                              onClick = {handleMenu}
+                        >
+                            <Link to={item.path} >
+                                <span>{item.display}</span>
+                            </Link>
+                        </div>
+                    ))
                   }
                </div>
                 {/* header right begin */}

@@ -9,14 +9,15 @@ import servicecontent from '../assets/fake_data/servicecontent'
 import Slider from '../conponents/Slider'
 import CardService from '../conponents/CardService'
 import ContentService from '../conponents/ContentService'
+import Taiapp from '../conponents/Taiapp'
+import BgRealistic from '../conponents/BgRealistic'
 
 const Home = () => {
 
   //dich vu noi bat  Service__card
 
   const[type, setType] = useState(0)
-  console.log(servicecontent[type].id)
-  console.log(type)
+ 
   const Index = servicecontent.findIndex(e => e.id_service === type)
   
   
@@ -24,7 +25,7 @@ const Home = () => {
 
   return (
    
-    <div>
+    <>
       {/* begin slider */}
         <Slider 
           data={SliderData}
@@ -69,11 +70,26 @@ const Home = () => {
             
           </div>
         </div>
-      
+
       </section>
         </div>
       {/* end DỊCH VỤ NỔI BẬT */}
-    </div>
+      {/* begin TIỆN TÍCH APP */}
+      <section className="taiapp">
+        <div className="container">
+          <Taiapp />
+        </div>
+      </section>
+      {/* end TIỆN TÍCH APP */}
+
+      {/* begin HÌNH ẢNH THỰC TẾ */}
+      <section className="BgRealistic">
+        <div className="container">
+          <BgRealistic />
+        </div>
+      </section>
+      {/* begin HÌNH ẢNH THỰC TẾ */}
+    </>
   )
 }
 
