@@ -58,7 +58,7 @@
     }
     
     &__logo{
-        @include flex(center, start);
+        @include flex(center, flex-start);
         position: absolute;  
         height: 100%; 
         @include mobile{

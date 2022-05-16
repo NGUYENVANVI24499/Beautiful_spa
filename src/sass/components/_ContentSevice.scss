@@ -1,17 +1,18 @@
 .contentService{
     .boder{
-        
+ 
         height: .5px;
         width: 100%;
         background-color: rgb(126, 119, 119);
     }
+    
     padding: 3rem 0;
     margin-top: 2rem 0;
     @include flex(center, center);
     @include mobile{
         flex-direction: column;
     }
-    flex: 1;
+    
     &__image{
         height: 480px;
         min-width: 480px;
