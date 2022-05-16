@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState } from 'react'
 
 import img1 from "../assets/images/tamtrang.jpg"
 import img2 from "../assets/images/tamtrang1.jpg"
@@ -109,27 +109,27 @@ const BgRealistic = () => {
         </div>
         <div className="BgRealistic__cards">
         {
-            b.map((item,index)=>(
-                <div key={index} className="BgRealistic__card">
-                    <div className="BgRealistic__img">
-                        <img src={item.img} alt="đây là hình ảnh" />
+        b.map((item,index)=>(
+            <div key={index} className="BgRealistic__card">
+                <div className="BgRealistic__img">
+                    <img src={item.img} alt="đây là hình ảnh" />
+                </div>
+                <div className="BgRealistic__content">
+                    <div className="BgRealistic__button">
+                        <button className='button active'>trước</button>
+                        <button className='button active'>sau</button>
                     </div>
-                    <div className="BgRealistic__content">
-                        <div className="BgRealistic__button">
-                            <button className='button active'>trước</button>
-                            <button className='button active'>sau</button>
-                        </div>
-                        <div className="BgRealistic__description">
-                        {
-                            item.description
-                        }
-                            
-                    </div>
+                    <div className="BgRealistic__description">
+                    {
+                        item.description
+                    }
+                        
                 </div>
             </div>
-            ))
+        </div>
+        ))
         }
-           
+            
         </div>
         <p>Xem thêm </p>
     </div>
