@@ -3,6 +3,9 @@
     &__container{
         display: flex;
         align-items: center;
+        @include mobile{
+            flex-direction: column-reverse;
+        }
     }
     &__left{
         flex: 1;
