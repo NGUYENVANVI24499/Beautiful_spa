@@ -13,11 +13,13 @@ const ContentService = props => {
           <h3>{props.description}</h3>
           <p>{props.data.content}</p>
         </div>
+
         <div className="contentService__carousel">
-         
-          <img src={props.data.img2} alt="d" />
-          <img src={props.data.img3} alt="d" />
-          <img src={props.data.img4} alt="d" />
+        <div className="contentService__carousel--image"><img src={props.data.img2} alt="d" /></div>
+        <div className="contentService__carousel--image"><img src={props.data.img3} alt="d" /></div>
+        <div className="contentService__carousel--image"><img src={props.data.img4} alt="d" /></div>  
+
+
         </div>
         <div className="btnxemthem">Xem thêm</div>
       </div>
