@@ -56,7 +56,7 @@ const Taiapp = () => {
                 
             </div>
         </div>
-        <div className="taiapp__right">
+        <div className="taiapp__right .hide-for-mobile">
             <img src={img9} alt="" />
         </div>
     </div>

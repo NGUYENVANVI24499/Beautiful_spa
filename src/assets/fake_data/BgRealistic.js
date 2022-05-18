@@ -24,12 +24,12 @@ const btntreatments = [
 
     },
     {
-        id:4,
+        id:3,
         name: "Điều trị nám",
         path: "tab16"
     },
     {
-        id:5,
+        id:4,
         name: "điều trị 5",
         path: "tab17"
     }
