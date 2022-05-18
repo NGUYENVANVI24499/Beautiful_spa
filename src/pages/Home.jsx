@@ -12,9 +12,11 @@ import Taiapp from '../conponents/Taiapp'
 import BgRealistic from '../conponents/BgRealistic'
 import Product from '../conponents/Product'
 import Service from '../conponents/Service'
+import DataProducts from '../assets/fake_data/Products'
 
 // data hình ảnh thực tế
 import treatmentsData from '../assets/fake_data/BgRealistic'
+import Grid from '../conponents/Grid'
 
 const Home = () => {
 
@@ -24,11 +26,15 @@ const Home = () => {
  
   // const Index = servicecontent.findIndex(e => e.id_service === type)
   
-  //hiển thị dữ liệu của 4 button của hình ảnh thực tế
+  //hiển thị dữ liệu của button của hình ảnh thực tế
   const getAllbtntreatments = treatmentsData.getAllbtntreatments
    //hiển thị dữ liệu của hình ảnh thực tế 
    const getAlltreatments =treatmentsData.getAlltreatments
-   //const gettreatment = treatmentsData.gettreatment
+   const DataProduct = (count)=>{
+      return DataProducts.slice(0, count)
+  }
+ 
+   
   
 
 
@@ -78,9 +84,10 @@ const Home = () => {
               // hiển thị dữ liệu của 4 btn
                 button = {getAllbtntreatments}
                 content = {getAlltreatments}
+                //numberBtn không khai báo mặt định lấy tất cả btn
                 numberBtn = {2}
-               // numberContent ={5}
-            
+                //numberContent không khai báo mặt định lấy tất cả content
+                numberContent ={4}
             />
           </div>
         </div> 
@@ -90,7 +97,27 @@ const Home = () => {
       {/* begin sản phẩm nổi bật */}
       <section className="Product">
         <div className="container">
-          <Product />
+        <div className="Product__container">
+        <div className="Product__title"> SẢN PHẨM NỔI BẬT</div>
+        <div className="Product__cards">
+        <Grid 
+          col= {4}
+          mdCol = {3}
+          msCol ={1}
+          gap = {25}
+        >
+        {
+          DataProduct(4).map((item, index)=>(
+            <Product 
+               key={index}
+               data = {item}
+            />
+          ))
+        }
+        </Grid>
+        </div>
+         
+        </div>
         </div>
       </section>
       {/* end sản phẩm nổi bật */}
