@@ -5,7 +5,7 @@ const Service = () => {
     <div>
       <h1>Service</h1>
       <h2> Page dịch vụ</h2>
-      <img src={img}></img>
+      <img src={img} alt ="hình ảnh"></img>
     </div>
   )
 }
