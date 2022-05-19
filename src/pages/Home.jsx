@@ -2,6 +2,7 @@
 //import Helmet from '../conponents/Helmet'
 
 
+
 import SliderData from '../assets/fake_data/slider'
 
 import Slider from '../conponents/Home/Slider'
