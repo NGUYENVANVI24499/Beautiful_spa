@@ -6,7 +6,7 @@ import {
  
 
   
-import Header from './Header'
+import Header from './Home/Header'
 import Footer from './Footer'
 import Routess from '../routes/Routes'
 

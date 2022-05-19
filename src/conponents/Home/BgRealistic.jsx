@@ -1,5 +1,5 @@
 import React, { useState} from 'react'
-import Grid from "./Grid"
+import Grid from "../Grid"
 
 const BgRealistic = (props) => {
     const [btn, setBtn] = useState(0)

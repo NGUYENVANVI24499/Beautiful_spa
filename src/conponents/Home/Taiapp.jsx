@@ -1,14 +1,14 @@
 import React from 'react'
 
-import img1 from "../assets/images/qrcode.jpg"
-import img2 from "../assets/images/appstore.jpg"
-import img3 from "../assets/images/ggplay.jpg"
-import img4 from "../assets/images/datlich.jpg"
-import img5 from "../assets/images/kthuatvien.jpg"
-import img6 from "../assets/images/theodoikieutrinh.jpg"
-import img7 from "../assets/images/danhgia.jpg"
-import img8 from "../assets/images/tiplamdep.jpg"
-import img9 from "../assets/images/taiapp.png"
+import img1 from "../../assets/images/qrcode.jpg"
+import img2 from "../../assets/images/appstore.jpg"
+import img3 from "../../assets/images/ggplay.jpg"
+import img4 from "../../assets/images/datlich.jpg"
+import img5 from "../../assets/images/kthuatvien.jpg"
+import img6 from "../../assets/images/theodoikieutrinh.jpg"
+import img7 from "../../assets/images/danhgia.jpg"
+import img8 from "../../assets/images/tiplamdep.jpg"
+import img9 from "../../assets/images/taiapp.png"
 
 const Taiapp = () => {
   return (
