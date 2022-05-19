@@ -1,11 +1,11 @@
 import React ,{useState} from 'react'
 
 import {Link} from "react-router-dom";
-import service from '../assets/fake_data/service'
+import service from '../../assets/fake_data/service'
 
-import servicecontent from '../assets/fake_data/servicecontent'
-import ContentService from '../conponents/ContentService'
+import servicecontent from '../../assets/fake_data/servicecontent'
 
+import ContentService from './ContentService'
 const Service = () => {
   const[type, setType] = useState(0)
   const Index = servicecontent.findIndex(e => e.id_service === type)
