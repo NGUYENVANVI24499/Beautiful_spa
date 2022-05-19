@@ -1,10 +1,8 @@
  import React from 'react'
-
+//import Helmet from '../conponents/Helmet'
 
 
 import SliderData from '../assets/fake_data/slider'
-
-
 
 import Slider from '../conponents/Home/Slider'
 
@@ -13,6 +11,7 @@ import BgRealistic from '../conponents/Home/BgRealistic'
 import Product from '../conponents/Home/Product'
 import Service from '../conponents/Home/Service'
 import DataProducts from '../assets/fake_data/Products'
+//import Section, {SectionBody, SectionTitle} from '../conponents/Section'
 
 // data hình ảnh thực tế
 import treatmentsData from '../assets/fake_data/BgRealistic'
@@ -34,14 +33,9 @@ const Home = () => {
       return DataProducts.slice(0, count)
   }
  
-   
-  
-
-
-
   return (
     
-   
+
     <>
       {/* begin slider */}
         <Slider 
@@ -85,9 +79,9 @@ const Home = () => {
                 button = {getAllbtntreatments}
                 content = {getAlltreatments}
                 //numberBtn không khai báo mặt định lấy tất cả btn
-                //numberBtn = {4}
+                numberBtn = {5}
                 //numberContent không khai báo mặt định lấy tất cả content
-                //numberContent ={4}
+                numberContent ={4}
             />
           </div>
         </div> 

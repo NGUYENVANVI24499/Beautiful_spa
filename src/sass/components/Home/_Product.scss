@@ -90,7 +90,8 @@
 
     }
     &--shopping{
-        
+            width: fit-content;
+            
             display: flex;
             align-items: center;
             justify-content: center;
@@ -103,6 +104,7 @@
             font-weight: 400;
             
             button{
+                cursor: pointer;
                 background-color: initial;
                 border: none;
             }
