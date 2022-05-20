@@ -18,7 +18,7 @@ const mainNav = [
   },
   {
     display: "Kết quả điều trị",
-    path:"/d"
+    path:"/Treatment_results"
   },
   {
     display: "Đào tạo spa",
