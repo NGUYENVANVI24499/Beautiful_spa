@@ -43,8 +43,8 @@ const BgRealistic = (props) => {
         <Grid
             col= {4}
             mdCol = {3}
-            msCol ={1}
-            gap = {25}
+            msCol ={2}
+            gap = {20}
         >
             
         {
@@ -72,7 +72,7 @@ const BgRealistic = (props) => {
         
             
         </div>
-        <p>Xem thêm </p>
+        
     </>
   )
 }

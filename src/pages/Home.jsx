@@ -1,5 +1,5 @@
  import React from 'react'
-//import Helmet from '../conponents/Helmet'
+  import Helmet from '../conponents/Helmet'
 
 
 
@@ -17,6 +17,7 @@ import DataProducts from '../assets/fake_data/Products'
 // data hình ảnh thực tế
 import treatmentsData from '../assets/fake_data/BgRealistic'
 import Grid from '../conponents/Grid'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -37,7 +38,7 @@ const Home = () => {
   return (
     
 
-    <>
+    <Helmet title="trang chủ">
       {/* begin slider */}
         <Slider 
           data={SliderData}
@@ -74,16 +75,16 @@ const Home = () => {
           <div className="BgRealistic__desp">
               Cảm nhận sự khác biệt khi đến với hệ thống làm đẹp hàng đầu SeoulSpa.vn.
           </div>
-            
             <BgRealistic 
               // hiển thị dữ liệu của 4 btn
                 button = {getAllbtntreatments}
                 content = {getAlltreatments}
                 //numberBtn không khai báo mặt định lấy tất cả btn
-                numberBtn = {5}
+                numberBtn = {4}
                 //numberContent không khai báo mặt định lấy tất cả content
                 numberContent ={4}
             />
+          <div className='BgRealistic__seemore'><Link to={'/categ'}>Xem thêm</Link></div>
           </div>
         </div> 
       </section>
@@ -92,32 +93,32 @@ const Home = () => {
       {/* begin sản phẩm nổi bật */}
       <section className="Product">
         <div className="container">
-        <div className="Product__container">
-        <div className="Product__title"> SẢN PHẨM NỔI BẬT</div>
-        <div className="Product__cards">
-        <Grid 
-          col= {4}
-          mdCol = {3}
-          msCol ={1}
-          gap = {25}
-        >
-        {
-          DataProduct(4).map((item, index)=>(
-            <Product 
-               key={index}
-               data = {item}
-            />
-          ))
-        }
-        </Grid>
-        </div>
-         
-        </div>
+          <div className="Product__container">
+            <div className="Product__title"> SẢN PHẨM NỔI BẬT</div>
+            <div className="Product__cards">
+              <Grid 
+                col= {4}
+                mdCol = {3}
+                msCol ={2}
+                gap = {20}
+              >
+              {
+                DataProduct(4).map((item, index)=>(
+                  <Product 
+                    key={index}
+                    data = {item}
+                  />
+                ))
+              }
+              </Grid>
+            </div>
+            <div>xem thêm</div>
+          </div>
         </div>
       </section>
       {/* end sản phẩm nổi bật */}
 
-    </>
+    </Helmet>
   )
 }
 
