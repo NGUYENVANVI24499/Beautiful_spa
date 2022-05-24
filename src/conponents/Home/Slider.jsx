@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
+import { memo } from 'react';
 
 const Slider = props => {
     const data = props.data;
@@ -78,4 +79,4 @@ const SliderItem = props => (
     </div>
 )
 
-export default Slider
+export default memo(Slider)

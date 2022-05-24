@@ -17,7 +17,7 @@ const Treatment_results = () => {
     < >
       <Helmet title = "kết quả điều trị">
         <section >
-          <div className='imgbanner'>
+          <div className='banner__image'>
             <img  src={imgbanner} alt="banner" />
           </div>
         </section>
@@ -36,7 +36,7 @@ const Treatment_results = () => {
             content = {getAlltreatments}   
             />
           </SectionBody>
-          <div className='button active'>xem thêm</div>
+          <div className='button active seemore'>xem thêm</div>
         </Section>
         </div>
       {/* end kết quả điều trị treatment results */}

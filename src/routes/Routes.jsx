@@ -11,6 +11,7 @@ import Introduce from '../pages/Introduce'
 import Product from '../pages/Product'
 import Service from '../pages/Service'
 import Treatment_results from '../pages/Treatment_results'
+import Recruitment from '../pages/Recruitment';
 
 const Routess = () => {
   return (
@@ -20,6 +21,7 @@ const Routess = () => {
        <Route path= '/Introduce'  element= {<Introduce />} />
        <Route path= '/Service'  element= {<Service />} />
        <Route path='/Treatment_results' element = {<Treatment_results />} />
+       <Route path='/tuyen-dung' element = {<Recruitment />} />
     </Routes>
     
   )

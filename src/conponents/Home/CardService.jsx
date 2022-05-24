@@ -5,7 +5,7 @@ const CardService = props => {
   return (
     < >
       <div className="Service__card__item--image">
-        <img src={props.img} alt="Alternative text" />
+        <img className='svghover' src={props.img} alt="Alternative text" />
       </div>
       <div className="Service__card__item--contend">
         {props.description}
