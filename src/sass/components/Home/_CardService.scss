@@ -32,12 +32,17 @@
         
         &__item{
             border-radius: 15px;
-            padding: 10px 0;
+            padding-top: 10px;
             display: flex;
             align-items: center;
             flex-direction: column;
             &--image{
                 line-height: 2.56rem;
+                max-width: 83px;
+                img{
+                    width: 100%;
+                    
+                }
             }
             &--contend{
                 flex: 1;
@@ -55,9 +60,13 @@
                 word-break: break-word;
             }
             &.active{
-               border: 1px solid #dc3f5d;
+               
                 .Service__card__item--image{
-                                       
+                    
+                    .svghover{
+                        color: #d80931;
+                      fill: currentColor;
+                    }
                 }
                 .Service__card__item--contend{
                     color: #d80931;

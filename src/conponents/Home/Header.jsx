@@ -1,6 +1,9 @@
 import logo from '../../assets/images/Logo-2.png'
 import {Link, useLocation} from "react-router-dom";
 import { useEffect ,useRef} from 'react';
+import Tippy from '@tippyjs/react'
+import 'tippy.js/themes/light.css';
+
 
 
 const mainNav = [
@@ -10,7 +13,28 @@ const mainNav = [
   },
   {
     display: "Về chúng tôi",
-    path:"/Introduce"
+    path:"/Introduce",
+    children:[
+      {
+        display:"Tổng quan về Seoulspa.vn",
+        path: "/gioi-thieu/"
+      },
+      {
+        display:"Cơ sở vật chất",
+        path: "/gioi-thieu/"
+      },
+      {
+        display:"Trang thiết bị",
+        path: "/gioi-thieu/"
+      },
+      {
+        display:"Đội ngũ chuyên gia",
+        path: "/gioi-thieu/"
+      },
+
+    ]
+
+    
   },
   {
     display: "Dịch vụ",
@@ -30,7 +54,7 @@ const mainNav = [
   },
   {
     display: "Tuyển Dụng",
-    path:"/s"
+    path:"/tuyen-dung"
   },
  
 ]
@@ -56,6 +80,7 @@ const Header = () => {
   const menuLeft = useRef(null)
   const handleMenu = ()=>menuLeft.current.classList.toggle('active')
   
+  
 
   return (
     <div className="header" ref={headerRef}>
@@ -68,10 +93,10 @@ const Header = () => {
             Hotline: 19006947
           </div>
         </div>
-        <div className="shopping">
+        {/* <div className="shopping">
           <span>0d</span>
           <ion-icon name="card-outline"></ion-icon>
-        </div>
+        </div> */}
             
           </div>
         <div className="container">
@@ -96,9 +121,16 @@ const Header = () => {
                               className={`header__menu__left--item ${index === activeNav ? 'active' : ''}` }
                               onClick = {handleMenu}
                         >
+                          <div className="area">
+                          <Tippy 
+                          
+                          >
+
                             <Link to={item.path} >
-                                <span>{item.display}</span>
+                              <span>{item.display}</span>
                             </Link>
+                          </Tippy>
+                          </div>
                         </div>
                     ))
                   }

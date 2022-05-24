@@ -89,7 +89,7 @@
         &__left,&__right
         {
             @include flex(center, center);
-            gap: 39px;
+            gap: 30px;
 
             &--item:hover{
                 color: $main-color;

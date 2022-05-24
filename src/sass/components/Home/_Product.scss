@@ -56,6 +56,9 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 10px 0;
+        @include mobile{
+            padding: 1rem;    
+        }
         
     }
     &--name{
@@ -86,6 +89,9 @@
             text-decoration: line-through;
             opacity: .7;
           
+        }
+        @include mobile{
+            font-size: 14px;
         }
 
     }
