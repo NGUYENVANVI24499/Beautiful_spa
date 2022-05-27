@@ -11,7 +11,9 @@ const Content_body = () => {
    <div className="container Content_body" ref={btn}> 
       
      <div className="detail-left">
-        left
+        leftNhững kỹ năng, dự án làm việc hoặc thành tích nào khiến bạn trở thành một ứng cử viên nặng
+        Những kỹ năng, dự án làm việc hoặc thành tích nào khiến bạn trở thành một ứng cử viên nặng
+        Những kỹ năng, dự án làm việc hoặc thành tích nào khiến bạn trở thành một ứng cử viên nặng
      </div>
      <div className="detail-right">
         <div>

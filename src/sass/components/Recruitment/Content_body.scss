@@ -5,6 +5,7 @@
    
     
     .detail-left{
+        font-size: 1.4rem;
         width: 940px;
         border: 1px solid #dddddd;
         min-height: 800px;
@@ -12,6 +13,7 @@
         
     }
     .detail-right{
+        width: 100%;
         flex: 1;
         font-size: 14px;
         min-height: 800px;
@@ -22,6 +24,9 @@
         }
         &__image{
             margin-top: 20px;
+            width:370px ;
+            height: 420px;
+           
         }
 
     }
