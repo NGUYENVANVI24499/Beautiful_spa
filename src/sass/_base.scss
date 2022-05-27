@@ -107,3 +107,22 @@ input{
     border: none;
     
 }
+.button{
+
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+    &.active{
+        background-color: #B10224;
+        color: #fff;
+        font-weight: 500;
+    }
+    &-primary{
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #1374F6;
+        color: white;
+    }
+}
